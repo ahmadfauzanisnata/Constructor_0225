@@ -35,8 +35,23 @@ class mahasiswa{
         cout << "Nim = " << nim << endl;
          cout << "Nama = " << nama << endl;
           cout << endl;
+    };
+};
+
+    int main()
+    {
+        mahasiswa mhs1;
+         mahasiswa mhs2(20);
+          mahasiswa mhs3("isnata");
+           mahasiswa mhs4(30, "fauzan");
+
+           mhs1.cetak();
+           mhs2.cetak();
+           mhs3.cetak();
+           mhs4.cetak();
+
+           return 0;
     }
 
     
 
-};
