@@ -14,9 +14,12 @@ class mahasiswa{
     {
         nama = pnama;
         setID();
-
     }
-
-
      
 };
+
+int mahasiswa::nim = 225;
+void mahasiswa::setID()
+{
+    id = ++nim;
+}
