@@ -33,10 +33,16 @@ void mahasiswa::printALL()
 
 int main()
 {
-    mahasiswa mhs1("zilong");
-    mahasiswa mhs2("nana");
-    mahasiswa mhs3("ling");
-    mahasiswa mhs4("hayabusa");
+	mahasiswa mhs1("Zilong");
+	mahasiswa mhs2("Nana");
+	mahasiswa mhs3("Ling");
+	mahasiswa mhs4("Hayabusa");
 
-    
+
+	mhs1.printALL();
+
+	mhs2.printALL();
+	mhs3.printALL();
+	mhs4.printALL();
+	return 0;
 }
