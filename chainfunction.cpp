@@ -15,3 +15,11 @@ class buku
         return this->judul;
     }
 } bukunya;
+
+int main()
+{
+    // bukunnya.setJudul("Matematika");
+    // cout << bukunya.getJudul();
+    cout << bukunya.setJudul("Matematika").getJudul(); //chain function calss
+    return 0;
+}
