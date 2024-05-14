@@ -31,6 +31,12 @@ class mahasiswa{
         nama = iNama;
     };
 
+    void cetak(){
+        cout << "Nim = " << nim << endl;
+         cout << "Nama = " << nama << endl;
+          cout << endl;
+    }
+
     
 
 };
