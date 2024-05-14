@@ -1,52 +1,17 @@
 #include <iostream>
 using namespace std;
-
-class angka{
-  private:
-    int *arr;
-    int panjang;
-  public:
-    angka(int); //constructor
-    ~angka(); //Destructor
-    void cetakData();
-    void isiData();
-};
-//definisi member function
-
-angka::angka(int i){ //constructor
-    panjang = i;
-    arr = new int[i];
-    isiData();
-
-}
-angka::~angka(){
-    cout <<endl;
-    cetakData();
-    delete[]arr;
-    cout << "Alamat Array Sudah Dilepaskan"<<endl;
-}
-
-void angka::cetakData(){
-    for(int i=1;i<=panjang;i++){
-        cout<<i<<" = "<<arr[i]<<endl;
-    }
-}
-
-void angka::cetakData(){
-    for(int i=1;i<=panjang;i++){
-        cout<<i<<" = ";
-        cin>>arr[i];
-    }
-    cout<<endl;
-}
-
-int main()
+class buku
 {
-    angka belajarcpp(3); //constructor Dipanggil
-    angka *ptrBelajarcpp = new angka(5); //constructor Dipanggil
-    delete ptrBelajarcpp; //constructor Dipanggil
+    string judul;
+    public:
+    buku setJudul(string judul)
+    {
+        this->judul = judul;
+        return *this; // chain function
+    }
+    string getJudul()
+    {
 
-    return 0;
-}//desturctor dipanggil
-
-
+        return this->judul;
+    }
+} bukunya;
